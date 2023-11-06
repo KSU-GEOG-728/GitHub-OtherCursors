@@ -11,8 +11,8 @@ Edit the provided Python file called <code>GitHub-OtherCursors.py</code> to crea
 
 1. Incorporates an insert cursor to add five new observations of lesser prairie chickens to the existing feature class <code>tympanuchus_pallidicinctus</code>.  Alternatively, you may use the five new observations to create a new feature class and append these to the existing feature class to produce your final input.
 2. Uses the Python <code>fileinput</code> module and related methods to read in the new observations in the provided text file <code>newchickens.txt</code>.
-3. Incorporates an update cursor to add the species name Tympanuchus pallidicinctus to the "label" field, x- and y-coordinates of each observation to the "long" and "lat" fields, and a value of 1 to the "abundance" field of the new records in the final output.
-4. Finishes by computing a minimum bounding polygon as a rough estimate of the species range.  For this, use the ArcPy function "MinimumBoundingGeometry" using the geometry type CONVEX_HULL.  Read the tool help file for this function closely, as it may have special licensing or extension requirements to account for in your script.
+3. Incorporates an update cursor to add the species name *Tympanuchus pallidicinctus* to the "label" field, x- and y-coordinates of each observation to the "long" and "lat" fields, and a value of 1 to the "abundance" field of the new records in the final output.
+4. Finishes by computing a minimum bounding polygon as a rough estimate of the species range.  For this, use the function <code>arcpy.management.MinimumBoundingGeometry</code> using the geometry type CONVEX_HULL.  Read the tool help file for this function closely, as it may have special licensing or extension requirements to account for in your script.
 5. Includes at least one "try-except" block to trap geoprocessing errors.
 
 
