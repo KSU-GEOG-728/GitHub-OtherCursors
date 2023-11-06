@@ -17,8 +17,8 @@ Edit the provided Python file called <code>GitHub-OtherCursors.py</code> to crea
 
 Also include in your script a section that establishes the following three, and only these three, local variables.  Modify the path to the <code>inFile</code> variable so it works properly on your computer.
 
-*<code>inFile = "D:\\Exercise10\\tooldata\\newchickens.txt"</code>
-*<code>inFc = "tympanuchus_pallidicinctus"</code>
+*<code>inFile = "D:\\Exercise10\\tooldata\\newchickens.txt"</code><br>
+*<code>inFc = "tympanuchus_pallidicinctus"</code><br>
 *<code>pt = arcpy.Point()</code>
 
 After a successful run, your script should produce a modified version of "tympanuchus_pallidicinctus" that includes the five new observations and attribute field values as well as a new feature class containing the minimum bounding geometry polygon.
