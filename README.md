@@ -21,7 +21,7 @@ Also include in your script a section that establishes the following three, and 
 <code>inFc = "tympanuchus_pallidicinctus"</code><br>
 <code>pt = arcpy.Point()</code>
 
-After a successful run, your script should produce a modified version of <code>tympanuchus_pallidicinctus</code> that includes the five new observations and attribute field values as well as a new feature class containing the minimum bounding geometry polygon.
+After a successful run, your script should produce a modified version of <code>tympanuchus_pallidicinctus</code> that includes the correct geometry for the five new observations and their required attribute field values...as well as a new feature class containing the minimum bounding geometry polygon for all lesser prairie chicken locations.
 
 ## Rubric:
 
