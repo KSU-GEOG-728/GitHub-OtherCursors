@@ -1,13 +1,23 @@
-# GitHub-SearchCursors
+# GitHub-OtherCursors
 Exercise for GEOG 728 Programming for Geographic Analysis at Kansas State University
 
 ### Instructions:
 
-Accept the GitHub Classroom assignment <code>GitHub-SearchCursor</code> and clone the new repository as a local personal repository.  Uncompress the provided ZIP file to access the ArcGIS Pro project file in your local repository workspace.  The only file which needs to be pushed to origin at the conclusion of the exercise is a single Python script.  There is no requirement this week to prepare and submit a script-based tool.  Should you encounter difficulties during the week, seek assistance by posting an issue in GitHub.
+Accept the GitHub Classroom assignment <code>GitHub-OtherCursors</code> and clone the new repository as a local personal repository.  Uncompress the provided ZIP file to access the ArcGIS Pro project file in your local repository workspace.  The only file which needs to be pushed to origin at the conclusion of the exercise is a single Python script.  There is no requirement to prepare and submit a script-based tool.  Should you encounter difficulties during the week, seek assistance by posting an issue in GitHub.
 
 ### Task:
 
-Edit the provided Python file called <code>GitHub-SearchCursor.py</code> to create a stand-alone script based on your corrected submission from the midterm practical exam.  With this week's objectives in mind, your script should accomplish the following objectives and/or include these specific features:
+Edit the provided Python file called <code>GitHub-OtherCursors.py</code> to create a new stand-alone script that includes the following features and capabilities.  For this script, there is no requirement to include user-defined inputs or any messaging, except for a custom print message should your script throw an exception (see the requirement below for a "try-except" block):
+
+1. Incorporates an insert cursor to add five new observations of lesser prairie chickens to the existing feature class <code>tympanuchus_pallidicinctus</code>.  Alternatively, you may use the five new observations to create a new feature class and append these to the existing feature class to produce your final input.
+2. Uses the Python <code>fileinput</code> module and related methods to read in the new observations in the provided text file <code>newchickens.txt</code>.
+3. Incorporates an update cursor to add the species name Tympanuchus pallidicinctus to the "label" field, x- and y-coordinates of each observation to the "long" and "lat" fields, and a value of 1 to the "abundance" field of the new records in the final output.
+4. Finishes by computing a minimum bounding polygon as a rough estimate of the species range.  For this, use the ArcPy function "MinimumBoundingGeometry" using the geometry type CONVEX_HULL.  Read the tool help file for this function closely, as it may have special licensing or extension requirements to account for in your script.
+5. Includes at least one "try-except" block to trap geoprocessing errors.
+
+
+
+
 
 1. Incorporates a setting that allows existing output to be overwritten.
 2. Creates a list of line-based feature classes in the user-defined workspace (all of the individual major rivers).
