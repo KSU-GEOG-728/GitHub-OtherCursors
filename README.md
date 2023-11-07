@@ -29,4 +29,4 @@ Review the assignment rubric available on Canvas for additional details on how y
 
 ## Submission:
 
-Commit your code changes for <code>GitHub-OtherCursors</code> to your assignment repository on GitHub.
+Commit your code changes for <code>GitHub-OtherCursors.py</code> to your assignment repository on GitHub.
