@@ -4,7 +4,7 @@
 #    File name: demo11_5.py
 #    Author: Shawn Hutchinson
 #    Description:  Implement an insert and update cursor to add row with attributes and geometry
-#    Date created: 11/06/2023
+#    Date created: 11/07/2023
 #    Python Version: 3.9.16
 
 # Import required modules and classes:
@@ -36,5 +36,5 @@ with arcpy.da.UpdateCursor(inFc, fields, whereClause) as cursor:
         row[0] = "Kansas State University"
         row[1] = "Education"
         row[2] = "Kansas State University was established in 1863 and is the nation's first operational land grant university."
-        row[3] = inPoint
+        row[3] = arpcy.PointGeometry(inPoint)
         cursor.updateRow(row)
