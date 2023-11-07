@@ -4,7 +4,7 @@
 #    File name: demo11_6.py
 #    Author: Shawn Hutchinson
 #    Description:  Implement an insert cursor to insert a polygon into a new feature class
-#    Date created: 11/06/2023
+#    Date created: 11/07/2023
 #    Python Version: 3.9.16
 
 # Import required modules and classes:
@@ -30,8 +30,7 @@ with arcpy.da.InsertCursor(outFc, "SHAPE@") as cursor:
 	for line in fileinput.input(inFile):
 		point.ID, point.Y, point.X = line.split()
 		array.add(point)
-	polygon = arcpy.Polygon(array)
-	cursor.insertRow([polygon])
+	cursor.insertRow([arcpy.Polygon(array)])
 
 # Close input file
 fileinput.close()
