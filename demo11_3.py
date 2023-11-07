@@ -4,7 +4,7 @@
 #    File name: demo11_3.py
 #    Author: Shawn Hutchinson
 #    Description:  Implement a search cursor and geometry token
-#    Date created: 11/06/2023
+#    Date created: 11/07/2023
 #    Python Version: 3.9.16
 
 # Import required modules and classes:
@@ -19,7 +19,6 @@ env.overwriteOutput = True
 inFc = "kansas_wonders_1"
 field = "Category"
 value = "Original"
-##whereClause = "'Category' = 'Original'"
 whereClause = """{0} = '{1}'""".format(arcpy.AddFieldDelimiters(inFc, field), value)
 
 # Create search cursor and retrieve/print coordinate values
